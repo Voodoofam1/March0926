@@ -1,6 +1,6 @@
-from input_utils import get_text,get_number
-from math_utils import div,add,sub,mul
-from string_utils import reverse_text,upper_text,count_text
+from input_utils import get_text, get_number
+from math_utils import div, add, sub, mul
+from string_utils import reverse_text, upper_text, count_text
 
 
 def run_math():
@@ -14,21 +14,13 @@ def run_math():
 
 
 def run_string():
-     c = get_text("Введите текст,который необходимо прочесть в обратном порядке")
-     d = get_text("Введите название или имя котрое необходимо написать с загланых букв")
-     e= get_text("Введите тескт в котором необходимо подсчитать длинну")
+    c = get_text("Введите текст,который необходимо прочесть в обратном порядке")
+    d = get_text("Введите название или имя котрое необходимо написать с загланых букв")
+    e = get_text("Введите тескт в котором необходимо подсчитать длинну")
 
-     print("переворот текста", reverse_text(c))
-     print("увелечение текста", upper_text(d))
-     print("подсчет длинны текста", count_text(e))
-
-
-
-
-
-
-
-
+    print("переворот текста", reverse_text(c))
+    print("увелечение текста", upper_text(d))
+    print("подсчет длинны текста", count_text(e))
 
 
 def main():
@@ -40,6 +32,7 @@ def main():
     elif choice == "2":
 
         run_string()
+
 
 if __name__ == "__main__":
     main()
